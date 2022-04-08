@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona - сеть отелей</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-top">
+      <div class="header-top flex">
         <a href="#" class="header-logo">
           <img src="img/logo.svg" alt="Logo-Lagoona" class="header-logo">
         </a>
@@ -25,9 +27,9 @@
           Личный кабинет
         </a>
       </div>
-      <div class="header-bottom">
+      <div class="header-bottom flex">
         <nav class="header-nav">
-          <ul class="header-list">
+          <ul class="header-list list-reset flex">
             <li class="header-list-item">
               <a href="#about-us" class="header-link">
                 О&nbsp;нас
@@ -61,10 +63,10 @@
           </ul>
         </nav>
         <div class="headrer-btns-wrap">
-          <button class="btn header-btn-first">
+          <button class="btn header-btn header-btn-first btn-reset">
             Хочу тур
           </button>
-          <button class="btn header-btn-second">
+          <button class="btn header-btn header-btn-second btn-reset">
             Обратный звонок
           </button>
         </div>
@@ -74,14 +76,14 @@
 
   <main class="main">
     <h1 class="vissually-hidden">Lagoona - сеть отелей</h1>
-    <section class="offers">
+    <section class="section offers">
       <div class="container">
         <h2 class="section-title">
           Спецпредложения
         </h2>
-        <div class="offers-all">
+        <div class="offers-all flex">
           <div class="offers-left">
-            <div class="offer">
+            <div class="offer flex">
               <h3 class="offer-title">
                 Мальдивские острова
               </h3>
@@ -92,7 +94,7 @@
                 Подробнее
               </a>
             </div>
-            <div class="offer">
+            <div class="offer flex">
               <h3 class="offer-title">
                 Горящий тур на&nbsp;остров Крит
               </h3>
@@ -104,7 +106,7 @@
               </a>
             </div>
           </div>
-          <div class="offer offer-rigrt">
+          <div class="offer offer-rigrt flex">
             <h3 class="offer-title offer-right-title">
               Номера категории люкс
             </h3>
@@ -118,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section id="about-us" class="about-us">
+    <section id="about-us" class="section about-us">
       <div class="container">
         <h2 class="section-title">
           О&nbsp;нас
@@ -133,12 +135,12 @@
         </p>
       </div>
     </section>
-    <section id="services" class="services">
+    <section id="services" class="section services">
       <div class="container">
         <h2 class="section-title">
           Услуги
         </h2>
-        <ul class="services-list">
+        <ul class="services-list list-reset flex">
           <li class="services-item">
             <article class="services-preview">
               <div class="services-preview-text">
@@ -198,12 +200,12 @@
         </ul>
       </div>
     </section>
-    <section id="benefits" class="benefits">
+    <section id="benefits" class="section benefits">
       <div class="container">
         <h2 class="section-title">
           Преимущества
         </h2>
-        <ul class="benefits-list">
+        <ul class="benefits-list list-reset flex">
           <li class="benefits-item">
             <p class="benefits-text">
               Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
@@ -247,17 +249,17 @@
         </ul>
       </div>
     </section>
-    <section id="accommodations" class="accommodations">
+    <section id="accommodations" class="section accommodations">
       <div class="container">
         <h2 class="section-title">
           Размещение
         </h2>
-        <ul class="hotels-list">
+        <ul class="hotels-list list-reset flex">
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-1.jpg" alt="Lagoona española" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-first">
                       от
@@ -281,7 +283,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -290,8 +292,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-2.jpg" alt="Lagoona son típicas" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-elemint-first">
                       от
@@ -315,7 +317,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -324,8 +326,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-3.jpg" alt="Lagoona de la guerra" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -349,7 +351,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -358,8 +360,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-4.jpg" alt="Lagoona mentira piadosa" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -383,7 +385,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -392,8 +394,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-5.jpg" alt="Lagoona empujar la creatividad" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -417,7 +419,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -426,8 +428,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-6.jpg" alt="Lagoona el retorno" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -451,7 +453,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -460,8 +462,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-7.jpg" alt="Lagoona mentira piadosa" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -485,7 +487,7 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
@@ -494,8 +496,8 @@
           <li class="hotel-item">
             <article class="hotel">
               <img src="img/hotel-8.jpg" alt="Lagoona suerte siguió siempre" class="hotel-img">
-              <div class="hotel-text">
-                <div class="hotel-price-stars">
+              <div class="hotel-text flex">
+                <div class="hotel-price-stars flex">
                   <span class="hotel-price">
                     <span class="hotel-price-element-first">
                       от
@@ -519,13 +521,13 @@
                 <span class="hotel-place">
                   Барселона, Испания
                 </span>
-                <button class="btn hotel-btn">
+                <button class="btn hotel-btn btn-reset">
                   Номера
                 </button>
               </div>
             </article>
           </li>
-          <li class="hotel all-hotel">
+          <li class="hotel all-hotel flex">
             <a href="#" class="link all-hotel-link">
               Посмотреть все варианты
             </a>
