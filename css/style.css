@@ -106,6 +106,7 @@ a {
 
 /* offers */
 .offers-left {
+  flex-direction: column;
   margin-right: 23px;
 }
 
@@ -120,16 +121,23 @@ a {
   outline: 1px solid coral;
 }
 
+.offers-left .offer {
+  flex: 1;
+  min-height: 258px;
+}
+
 .offer-rigrt {
   justify-content: flex-end;
 }
 
 .offer-title {
+  max-width: 300px;
   margin: 0;
   margin-bottom: 15px;
 }
 
 .offer-price {
+  max-width: 300px;
   margin-bottom: 47px;
 }
 
@@ -143,7 +151,7 @@ a {
   flex-wrap: wrap;
 }
 
-.services-item {
+.services-item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 23px;
 }
 
@@ -175,10 +183,14 @@ a {
 .benefits-item {
   width: 275px;
   min-height: 275px;
-  margin-bottom: 23px;
+  /* margin-bottom: 23px; */
   padding: 45px;
   padding-top: 116px;
   outline: 1px solid coral;
+}
+
+.benefits-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 23px;
 }
 
 .benefits-item:not(:nth-child(4n)) {
@@ -194,6 +206,10 @@ a {
   flex-wrap: wrap;
 }
 
+.hotel-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 23px;
+}
+
 .hotel-item:not(:nth-child(3n)) {
   margin-right: 23px;
 }
@@ -201,7 +217,6 @@ a {
 .hotel {
   width: 374px;
   min-height: 440px;
-  margin-bottom: 23px;
   outline: 1px solid coral;
 }
 
@@ -234,5 +249,5 @@ a {
 .all-hotel {
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 27px;
+  padding: 27px;
 }
