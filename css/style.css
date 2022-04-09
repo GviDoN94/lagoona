@@ -31,7 +31,7 @@ a {
 .btn-reset {
   padding: 0;
   border: none;
-  color: transparent;
+  background-color: transparent;
   cursor: pointer;
 }
 
