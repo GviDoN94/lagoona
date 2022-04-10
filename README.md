@@ -1,1 +1,1 @@
-# Lagoona is [theire](https://gvidon94.github.io/lagoona/)
+# Lagoona is [there](https://gvidon94.github.io/lagoona/)
