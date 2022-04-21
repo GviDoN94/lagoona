@@ -252,13 +252,13 @@ a {
 
 .offer-link {
   align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFCC66;
 }
 
 .offer-link-more {
   margin-right: 7px;
-  font-size: 16px;
-  line-height: 16px;
-  color: #FFCC66;
 }
 
 .about-us-text {
@@ -283,37 +283,52 @@ a {
 }
 
 .services-preview {
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   width: 573px;
   min-height: 330px;
   padding: 191px 45px 26px;
   background: #FFF;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  border-radius: 15px
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.services-preview-first {
+.services-preview::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 165px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-preview-first::before {
   background-image: url('../img/serv-1.jpg');
 }
 
-.services-preview-second {
+.services-preview-second::before {
   background-image: url('../img/serv-2.jpg');
 }
 
-.services-preview-third {
+.services-preview-third::before {
   background-image: url('../img/serv-3.jpg');
 }
 
-.services-preview-fourth {
+.services-preview-fourth::before {
   background-image: url('../img/serv-4.jpg');
 }
 
 .services-preview-link {
   align-items: center;
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
 }
 
 .services-preview-title {
@@ -322,7 +337,6 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #CC9933;
 }
 
 .services-preview-descr {
@@ -336,46 +350,56 @@ a {
 }
 
 .benefits-item {
+  position: relative;
   width: 275px;
   min-height: 275px;
   padding: 45px;
   padding-top: 116px;
   background: #FFFFFF;
   border-radius: 15px;
-  background-repeat: no-repeat;
-  background-size: 66px 66px;
-  background-position: 45px 40px;
 }
 
-.benefits-item-bath {
+.benefits-item::before {
+  position: absolute;
+  content: '';
+  width: 66px;
+  height: 66px;
+  top: 40px;
+  left: 45px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.benefits-item-bath::before {
 background-image: url('../img/bathtub.svg');
 }
 
-.benefits-item-hanger {
+.benefits-item-hanger::before {
 background-image: url('../img/hanger.svg');
 }
 
-.benefits-item-heating {
+.benefits-item-heating::before {
 background-image: url('../img/heating.svg');
 }
 
-.benefits-item-key {
+.benefits-item-key::before {
 background-image: url('../img/hotel-key.svg');
 }
 
-.benefits-item-parking{
+.benefits-item-parking::before {
 background-image: url('../img/parking.svg');
 }
 
-.benefits-item-reception {
+.benefits-item-reception::before {
 background-image: url('../img/reception.svg');
 }
 
-.benefits-item-security {
+.benefits-item-security::before {
 background-image: url('../img/security-box.svg');
 }
 
-.benefits-item-swimming {
+.benefits-item-swimming::before {
 background-image: url('../img/swimming-pool.svg');
 }
 
@@ -449,6 +473,7 @@ background-image: url('../img/swimming-pool.svg');
 .hotel-title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #000;
