@@ -76,7 +76,7 @@
     <h1 class="vissually-hidden">Lagoona - сеть отелей</h1>
     <section class="section offers">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title offers-title">
           Спецпредложения
         </h2>
         <div class="offers-all flex">
@@ -129,7 +129,7 @@
     </section>
     <section id="about-us" class="section about-us">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title about-us-title">
           О&nbsp;нас
         </h2>
         <p class="about-us-text">
@@ -144,7 +144,7 @@
     </section>
     <section id="services" class="section services">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title services-title">
           Услуги
         </h2>
         <ul class="services-list list-reset flex">
@@ -213,7 +213,7 @@
     </section>
     <section id="benefits" class="section benefits">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title benefits-title">
           Преимущества
         </h2>
         <ul class="benefits-list list-reset flex">
@@ -262,7 +262,7 @@
     </section>
     <section id="accommodations" class="section accommodations">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title accommofations-title">
           Размещение
         </h2>
         <ul class="hotels-list list-reset flex">
@@ -547,6 +547,44 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="sections want-tour">
+      <div class="container">
+        <div class="want-tour-wrapper">
+          <h2 class="section-title want-tour-title">Хочу тур</h2>
+          <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="form-wrapper flex">
+              <ul class="form-list flex">
+                <li class="form-item flex">
+                  <label class="form-lable">Город вылета</label>
+                  <select class="form-inputs form-select" name="city">
+                    <option value="saint-petersburg">Санкт-Петребург</option>
+                  </select>
+                </li>
+                <li class="form-item flex">
+                  <label class="form-lable">Страна</label>
+                  <select class="form-inputs form-select" name="countyry">
+                    <option value="australia">Австралия</option>
+                  </select>
+                </li>
+                <li class="form-item flex">
+                  <label class="form-lable">Дата прибытия</label>
+                  <input class="form-inputs form-date" type="date" name="date">
+                </li>
+                <li class="form-item flex">
+                  <label class="form-lable">Ночей</label>
+                  <input class="form-inputs form-num" type="number" name="nights" min="3" max="30" value="6">
+                </li>
+                <li class="form-item flex">
+                  <label class="form-lable">Туристы</label>
+                  <input class="form-inputs form-num" type="number" name="torists" min="1" max="10" value="2">
+                </li>
+              </ul>
+              <button class="btn btn-reset form-btn">Найти</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

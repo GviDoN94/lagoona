@@ -84,7 +84,6 @@ a {
 
 .section-title {
   margin: 0;
-  margin-bottom: 20px;
   padding-left: 40px;
   font-weight: 400;
   font-size: 40px;
@@ -183,6 +182,10 @@ a {
 }
 
 /* offers */
+.offers-title {
+  margin-bottom: 20px;
+}
+
 .offers-left {
   flex-direction: column;
   margin-right: 23px;
@@ -261,6 +264,11 @@ a {
   margin-right: 7px;
 }
 
+/* about-us */
+.about-us-title {
+  margin-bottom: 11px;
+}
+
 .about-us-text {
   max-width: 888px;
   margin: 0;
@@ -270,6 +278,10 @@ a {
 }
 
 /* services */
+.services-title {
+  margin-bottom: 20px;
+}
+
 .services-list {
   flex-wrap: wrap;
 }
@@ -345,6 +357,10 @@ a {
 }
 
 /* benefits */
+.benefits-title {
+  margin-bottom: 30px;
+}
+
 .benefits-list {
   flex-wrap: wrap;
 }
@@ -419,6 +435,10 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 /* accomodations */
+.accommofations-title {
+  margin-bottom: 30px;
+}
+
 .hotels-list {
   flex-wrap: wrap;
 }
@@ -510,4 +530,72 @@ background-image: url('../img/swimming-pool.svg');
 
 .all-hotel-link-more {
   margin-right: 7px;
+}
+
+/* want-tour */
+.want-tour-wrapper {
+  padding: 38px 0 71px;
+  background: #E9E9E9;
+  border-radius: 15px;
+}
+
+.want-tour-title {
+  margin-bottom: 19px;
+}
+
+.form {
+  padding: 0 45px;
+}
+
+.form-wrapper {
+  align-items: center;
+  min-height: 106px;
+  padding: 0 28px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.form-list {
+  padding: 0;
+}
+
+.form-item {
+  flex-direction: column;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #E1E1E1;;
+}
+
+.form-lable {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000
+}
+
+.form-inputs {
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.form-select {
+  min-width: 169px;
+}
+
+.form-date, .form-num {
+  min-width: 121px;
+}
+
+.form-num {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.form-num::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.form-btn {
+  width: 108px;
 }
