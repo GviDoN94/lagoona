@@ -101,6 +101,10 @@ a {
   margin-bottom: 70px;
 }
 
+.section:last-child {
+  margin-bottom: 19px;
+}
+
 /* header */
 .header {
   margin-bottom: 70px;
@@ -598,4 +602,85 @@ background-image: url('../img/swimming-pool.svg');
 
 .form-btn {
   width: 108px;
+}
+
+/* contacts */
+.contacts-title {
+  margin-bottom: 26px;
+}
+
+.contacts-wrapper {
+  padding: 45px;
+  background: #FFF;
+  border-radius: 15px;
+}
+
+.contacts-addres {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+
+.contacts-list {
+  width: 375px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contacts-item {
+  margin-bottom: 25px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.contacts-item:last-child {
+  margin-bottom: 45px;
+}
+
+.contacts-item-title {
+  min-width: 145px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+.contacts-item-wrapper {
+  flex-direction: column;
+}
+
+.contacts-item-descr {
+  line-height: 150%;
+  font-style: normal;
+}
+
+.contacts-link {
+  line-height: 150%;
+  font-style: normal;
+}
+
+.contacts-link-descr {
+  line-height: 150%;
+  font-style: normal;
+  color: #999999;
+  ;
+}
+
+.contacts-link-descr:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.contacts-btn {
+  min-width: 213px;
+  min-height: 70px;
+  font-weight: 700;
+}
+
+.contacts-img {
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
 }
