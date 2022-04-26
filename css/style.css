@@ -126,7 +126,7 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #666666;
+  color: #666;
 }
 
 .autorization-arrow{
@@ -161,7 +161,7 @@ a {
 .header-link {
   font-size: 16px;
   line-height: 16px;
-  color: #666666;
+  color: #666;
 }
 
 .btn {
@@ -375,7 +375,7 @@ a {
   min-height: 275px;
   padding: 45px;
   padding-top: 116px;
-  background: #FFFFFF;
+  background: #FFF;
   border-radius: 15px;
 }
 
@@ -458,7 +458,7 @@ background-image: url('../img/swimming-pool.svg');
 .hotel {
   width: 374px;
   min-height: 440px;
-  background: #FFFFFF;
+  background: #FFF;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -555,7 +555,7 @@ background-image: url('../img/swimming-pool.svg');
   align-items: center;
   min-height: 106px;
   padding: 0 28px;
-  background: #FFFFFF;
+  background: #FFF;
   border-radius: 15px;
 }
 
@@ -593,7 +593,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .form-num {
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCC;
 }
 
 .form-num::-webkit-inner-spin-button {
@@ -664,7 +664,7 @@ background-image: url('../img/swimming-pool.svg');
 .contacts-link-descr {
   line-height: 150%;
   font-style: normal;
-  color: #999999;
+  color: #999;
   ;
 }
 
@@ -683,4 +683,30 @@ background-image: url('../img/swimming-pool.svg');
   object-fit: cover;
   border-radius: 10px;
   overflow: hidden;
+}
+
+/* footer */
+.footer {
+  padding-bottom: 20px;
+}
+
+.footer-wrapper {
+  padding: 45px 51px;
+  background: #333;
+  border-radius: 15px;
+}
+
+.footer-left {
+  flex-direction:column;
+  justify-content: space-between;
+  max-width: 320px;
+  min-height:  251px;
+  margin-right: 102px;
+}
+
+.footer-left-descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFF;
 }
