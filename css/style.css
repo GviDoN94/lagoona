@@ -578,11 +578,15 @@ background-image: url('../img/swimming-pool.svg');
   color: #000
 }
 
-.form-inputs {
+.form-input {
   border: none;
   font-size: 16px;
   line-height: 16px;
   color: #000;
+}
+
+.form-input:focus {
+  outline: none ;
 }
 
 .form-select {
@@ -597,7 +601,8 @@ background-image: url('../img/swimming-pool.svg');
   border-bottom: 1px solid #CCC;
 }
 
-.form-num::-webkit-inner-spin-button {
+.form-input::-webkit-inner-spin-button,
+.form-input::-webkit-outer-spin-button {
   opacity: 1;
 }
 
@@ -752,33 +757,4 @@ background-image: url('../img/swimming-pool.svg');
 
 .social-item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.social-link {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.social-link-trip {
-  background-image: url('../img/footer-trip.svg');
-}
-
-.social-link-tw {
-  background-image: url('../img/footer-tw.svg');
-}
-
-.social-link-fb {
-  background-image: url('../img/footer-fb.svg');
-}
-
-.social-link-vk {
-  background-image: url('../img/footer-vk.svg');
-}
-
-.social-link-inst {
-  background-image: url('../img/footer-inst.svg');
 }
