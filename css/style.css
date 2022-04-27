@@ -136,6 +136,7 @@ a {
 .link {
   font-size: 16px;
   line-height: 16px;
+  font-style: normal;
   color: #CC9933;
 }
 
@@ -658,13 +659,12 @@ background-image: url('../img/swimming-pool.svg');
 
 .contacts-link {
   line-height: 150%;
-  font-style: normal;
 }
 
 .contacts-link-descr {
   line-height: 150%;
   font-style: normal;
-  color: #999;
+  color: #999999;
   ;
 }
 
@@ -694,6 +694,9 @@ background-image: url('../img/swimming-pool.svg');
   padding: 45px 51px;
   background: #333;
   border-radius: 15px;
+  background-image: url('../img/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 737px 113px;
 }
 
 .footer-left {
@@ -709,4 +712,73 @@ background-image: url('../img/swimming-pool.svg');
   font-size: 16px;
   line-height: 190%;
   color: #FFF;
+}
+
+.footer-link {
+  line-height: 150%;
+}
+
+.footer-contacts {
+  flex-direction: column;
+  min-width: 358px;
+  margin-right: auto;
+  padding-top: 7px;
+}
+
+.footer-contacts-address {
+  margin: 0;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.footer-links-wrapper {
+  flex-direction: column;
+}
+
+.footer-links-tel {
+  margin-bottom: 15px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  list-style: none;
+  line-height: 0;
+}
+
+.social-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social-link-trip {
+  background-image: url('../img/footer-trip.svg');
+}
+
+.social-link-tw {
+  background-image: url('../img/footer-tw.svg');
+}
+
+.social-link-fb {
+  background-image: url('../img/footer-fb.svg');
+}
+
+.social-link-vk {
+  background-image: url('../img/footer-vk.svg');
+}
+
+.social-link-inst {
+  background-image: url('../img/footer-inst.svg');
 }
