@@ -663,6 +663,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .contacts-link {
+  max-width: max-content;
   line-height: 150%;
 }
 
@@ -670,7 +671,6 @@ background-image: url('../img/swimming-pool.svg');
   line-height: 150%;
   font-style: normal;
   color: #999999;
-  ;
 }
 
 .contacts-link-descr:not(:last-child) {
@@ -720,6 +720,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .footer-link {
+  max-width: max-content;
   line-height: 150%;
 }
 
