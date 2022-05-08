@@ -759,3 +759,29 @@ background-image: url('../img/swimming-pool.svg');
 .social-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+.social-link {
+  outline: none;
+  font-size: 0;
+}
+
+.social-img {
+  fill: #999;
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-link:focus .social-img {
+  outline: none;
+  fill: #CC9933;
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-img:hover {
+  fill: #CC9933;
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-img:active {
+  fill: #A47312;
+  transition: fill 0.3s ease-in-out;
+}
