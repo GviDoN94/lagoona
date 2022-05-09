@@ -49,10 +49,6 @@ img {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* global styles */
 .list-reset {
   margin: 0;
@@ -105,6 +101,56 @@ a {
   margin-bottom: 19px;
 }
 
+.link {
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: #CC9933;
+  text-decoration: none;
+  transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.link:focus {
+  outline-color: #CC9933;
+  outline-offset: 5px;
+  transition: outline-color 0.2s ease-in-out;
+}
+
+.link:active {
+  color: #A47312;
+  transition: color 0.2s ease-in-out;
+}
+
+.btn {
+  height: 42px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:focus {
+  background-color: #CC9933;
+  color: #FFF;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #CC9933;
+  color: #FFF;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:active {
+  background-color: #A47312;
+  border-color: #A47312;
+  color: #FFF;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
 /* header */
 .header {
   margin-bottom: 70px;
@@ -127,17 +173,26 @@ a {
   font-size: 20px;
   line-height: 20px;
   color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-phone:hover {
+  color: #CC9933;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-phone:active {
+  color: #A47312;
+  transition: color 0.2s ease-in-out;
 }
 
 .autorization-arrow{
   margin-right: 7px;
 }
 
-.link {
-  font-size: 16px;
-  line-height: 16px;
-  font-style: normal;
-  color: #CC9933;
+.autorization-text {
+  line-height: 0;
 }
 
 .header-bottom {
@@ -163,15 +218,7 @@ a {
   font-size: 16px;
   line-height: 16px;
   color: #666;
-}
-
-.btn {
-  height: 42px;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 16px;
-  color: #CC9933;
+  text-decoration: none;
 }
 
 .header-btn-first {
@@ -265,6 +312,11 @@ a {
   color: #FFCC66;
 }
 
+.offer-link:active {
+  color: #FFF;
+  transition: color 0.2s ease-in-out;
+}
+
 .offer-link-more {
   margin-right: 7px;
 }
@@ -345,7 +397,6 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #CC9933;
 }
 
 .services-preview-title {
@@ -670,7 +721,7 @@ background-image: url('../img/swimming-pool.svg');
 .contacts-link-descr {
   line-height: 150%;
   font-style: normal;
-  color: #999999;
+  color: #999;
 }
 
 .contacts-link-descr:not(:last-child) {
