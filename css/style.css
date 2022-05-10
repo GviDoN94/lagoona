@@ -107,18 +107,21 @@ img {
   font-style: normal;
   color: #CC9933;
   text-decoration: none;
-  transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.link:focus {
-  outline-color: #CC9933;
+.link:focus-visible {
+  outline: none;
+  outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: outline-color 0.2s ease-in-out;
 }
 
-.link:active {
+.link:hover:not(:focus-visible) {
+  color: #E9C479;
+}
+
+.link:active:not(:focus-visible) {
   color: #A47312;
-  transition: color 0.2s ease-in-out;
 }
 
 .btn {
@@ -129,26 +132,23 @@ img {
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.btn:focus {
-  background-color: #CC9933;
-  color: #FFF;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.btn:hover {
+.btn:focus-visible {
   background-color: #CC9933;
   color: #FFF;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.btn:active {
+.btn:hover:not(:focus-visible) {
+  background-color: #CC9933;
+  color: #FFF;
+}
+
+.btn:active:not(:focus-visible) {
   background-color: #A47312;
   border-color: #A47312;
   color: #FFF;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 /* header */
@@ -174,21 +174,35 @@ img {
   line-height: 20px;
   color: #666;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
 
-.header-phone:hover {
+.header-phone:focus-visible {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
   color: #CC9933;
-  transition: color 0.2s ease-in-out;
 }
 
-.header-phone:active {
+.header-phone:hover:not(:focus-visible) {
+  color: #CC9933;
+}
+
+.header-phone:active:not(:focus-visible) {
   color: #A47312;
-  transition: color 0.2s ease-in-out;
 }
 
 .autorization-arrow{
   margin-right: 7px;
+  fill: #CC9933;
+  transition: fill 0.2s ease-out;
+}
+
+.autorization:hover:not(:focus-visible) .autorization-arrow{
+  fill: #E9C479;
+}
+
+.autorization:active:not(:focus-visible) .autorization-arrow{
+  fill: #A47312;
 }
 
 .autorization-text {
@@ -219,6 +233,21 @@ img {
   line-height: 16px;
   color: #666;
   text-decoration: none;
+  transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
+}
+
+.header-link:focus-visible {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.header-link:hover:not(:focus-visible) {
+  color: #CC9933;
+}
+
+.header-link:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .header-btn-first {
@@ -248,6 +277,7 @@ img {
 }
 
 .offer {
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   width: 573px;
@@ -264,11 +294,11 @@ img {
 }
 
 .offer-left-first {
-  background-image: url('../img/offer-left-1.jpg');
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer-left-1.jpg');
 }
 
 .offer-left-second {
-  background-image: url('../img/offer-left-2.jpg');
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer-left-2.jpg');
 }
 
 .offer-rigrt {
@@ -310,12 +340,46 @@ img {
   font-size: 16px;
   line-height: 16px;
   color: #FFCC66;
-}
-
-.offer-link:active {
-  color: #FFF;
   transition: color 0.2s ease-in-out;
 }
+
+.offer-link-arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.offer-link:focus-visible {
+  outline: 0;
+}
+
+.offer-link:hover:not(:focus-visible) .offer-link-arrow {
+  transform: translateX(11px);
+}
+
+.offer-link:active:not(:focus-visible) {
+  color: #FFF;
+}
+
+.offer-link:active:not(:focus-visible) .offer-link-arrow {
+  transform: none;
+}
+
+.offer-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: 1px solid #CC9933;
+  outline-offset:  8px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.offer-link:focus-visible::before {
+  opacity: 1;
+}
+
 
 .offer-link-more {
   margin-right: 7px;
@@ -398,6 +462,42 @@ img {
   font-size: 20px;
   line-height: 200%;
 }
+
+.services-preview-arrow {
+  stroke: #CC9933;
+  transition: transform 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+
+.services-preview-link:focus-visible {
+  outline: none;
+}
+
+.services-preview-link:hover:not(:focus-visible) .services-preview-arrow {
+  transform: translateX(11px);
+  stroke: #E9C479;
+}
+
+.services-preview-link:active:not(:focus-visible) .services-preview-arrow {
+  transform: none;
+  stroke: #A47312;
+}
+
+.services-preview-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: 1px solid #CC9933;
+  outline-offset:  8px;
+  /* opacity: 0; */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* .services-preview-link:focus-visible::before {
+  opacity: 1;
+} */
 
 .services-preview-title {
   margin: 0;
@@ -567,6 +667,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .all-hotel {
+  position: relative;
   align-items: flex-end;
   justify-content: center;
   padding: 27px;
@@ -582,6 +683,36 @@ background-image: url('../img/swimming-pool.svg');
   font-size: 20px;
   line-height: 200%;
   color: #FFF;
+}
+
+.all-hotel-link:focus-visible {
+  outline: none;
+}
+
+.all-hotel-link-arrow {
+  stroke: white;
+  transition: transform 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+
+.all-hotel-link:hover:not(:focus-visible) .all-hotel-link-arrow {
+  transform: translateX(11px);
+  stroke: #E9C479;
+}
+
+.all-hotel-link:active:not(:focus-visible) .all-hotel-link-arrow {
+  transform: none;
+  stroke: #A47312;
+}
+
+.all-hotel-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
 }
 
 .all-hotel-link-more {
@@ -821,18 +952,18 @@ background-image: url('../img/swimming-pool.svg');
   transition: fill 0.3s ease-in-out;
 }
 
-.social-link:focus .social-img {
+.social-link:focus-visible .social-img {
   outline: none;
   fill: #CC9933;
   transition: fill 0.3s ease-in-out;
 }
 
-.social-img:hover {
+.social-img:hover:not(:focus-visible) {
   fill: #CC9933;
   transition: fill 0.3s ease-in-out;
 }
 
-.social-img:active {
+.social-img:active:not(:focus-visible) {
   fill: #A47312;
   transition: fill 0.3s ease-in-out;
 }
