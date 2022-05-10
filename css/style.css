@@ -81,6 +81,9 @@ img {
 :root {
   --black: #000;
   --white: #FFF;
+  --grey: #999;
+  --white-grey: #E1E1E1;
+  --dark-grey: #666;
   --yellow: #CC9933;
   --light-yellow: #E9C479;
   --dark-yellow: #A47312;
@@ -175,12 +178,16 @@ img {
   font-size: 0;
 }
 
+.header-logo-link:focus-visible {
+  outline: none;
+}
+
 .header-phone {
   margin-right: auto;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #666;
+  color: var(--dark-grey);
   text-decoration: none;
   transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
@@ -210,7 +217,7 @@ img {
 }
 
 .autorization:active:not(:focus-visible) .autorization-arrow{
-  fill: var(--dark-yellow);
+  fill: var(--yellow);
 }
 
 .autorization-text {
@@ -229,7 +236,7 @@ img {
 .header-nav {
   padding: 10px 0;
   padding-right: 56px;
-  border-right: 1px solid #E1E1E1;
+  border-right: 1px solid var(--white-grey);
 }
 
 .header-list-item:not(:last-child) {
@@ -239,7 +246,7 @@ img {
 .header-link {
   font-size: 16px;
   line-height: 16px;
-  color: #666;
+  color: var(--dark-grey);
   text-decoration: none;
   transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
@@ -432,7 +439,6 @@ img {
   padding: 191px 45px 26px;
   background: var(--white);
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .services-preview::before {
@@ -448,19 +454,19 @@ img {
 }
 
 .services-preview-first::before {
-  background-image: url('../img/serv-1.jpg');
+  background-image: url('../img/serv-1.png');
 }
 
 .services-preview-second::before {
-  background-image: url('../img/serv-2.jpg');
+  background-image: url('../img/serv-2.png');
 }
 
 .services-preview-third::before {
-  background-image: url('../img/serv-3.jpg');
+  background-image: url('../img/serv-3.png');
 }
 
 .services-preview-fourth::before {
-  background-image: url('../img/serv-4.jpg');
+  background-image: url('../img/serv-4.png');
 }
 
 .services-preview-link {
@@ -487,7 +493,7 @@ img {
 
 .services-preview-link:active:not(:focus-visible) .services-preview-arrow {
   transform: none;
-  stroke: var(--dark-yellow);
+  stroke: var(--yellow);
 }
 
 .services-preview-link::before {
@@ -499,13 +505,13 @@ img {
   right: 0;
   outline: 1px solid var(--yellow);
   outline-offset:  8px;
-  /* opacity: 0; */
+  opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
 
-/* .services-preview-link:focus-visible::before {
+.services-preview-link:focus-visible::before {
   opacity: 1;
-} */
+}
 
 .services-preview-title {
   margin: 0;
@@ -620,7 +626,6 @@ background-image: url('../img/swimming-pool.svg');
   min-height: 440px;
   background: var(--white);
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .hotel-img {
@@ -645,7 +650,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .hotel-price-element-first {
-  color: #999;
+  color: var(--grey);
 }
 
 .hotel-price-element-second {
@@ -667,7 +672,7 @@ background-image: url('../img/swimming-pool.svg');
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 16px;
-  color: #999;
+  color: var(--grey);
 }
 
 .hotel-btn {
@@ -695,10 +700,15 @@ background-image: url('../img/swimming-pool.svg');
 
 .all-hotel-link:focus-visible {
   outline: none;
+  color: var(--yellow);
+}
+
+.all-hotel-link:focus-visible .all-hotel-link-arrow{
+  stroke: var(--yellow);
 }
 
 .all-hotel-link-arrow {
-  stroke: white;
+  stroke: var(--white);
   transition: transform 0.2s ease-in-out, stroke 0.2s ease-in-out;
 }
 
@@ -709,7 +719,7 @@ background-image: url('../img/swimming-pool.svg');
 
 .all-hotel-link:active:not(:focus-visible) .all-hotel-link-arrow {
   transform: none;
-  stroke: var(--dark-yellow);
+  stroke: var(--yellow);
 }
 
 .all-hotel-link::before {
@@ -719,8 +729,6 @@ background-image: url('../img/swimming-pool.svg');
   left: 0;
   bottom: 0;
   right: 0;
-  outline: 1px solid var(--yellow);
-  outline-offset: 8px;
 }
 
 .all-hotel-link-more {
@@ -857,10 +865,14 @@ background-image: url('../img/swimming-pool.svg');
   line-height: 150%;
 }
 
+.contacts-link:focus-visible {
+  outline-offset: 0;
+}
+
 .contacts-link-descr {
   line-height: 150%;
   font-style: normal;
-  color: #999;
+  color: var(--grey);
 }
 
 .contacts-link-descr:not(:last-child) {
@@ -914,6 +926,10 @@ background-image: url('../img/swimming-pool.svg');
   line-height: 150%;
 }
 
+.footer-link:focus-visible {
+  outline-offset: 0;
+}
+
 .footer-contacts {
   flex-direction: column;
   min-width: 358px;
@@ -956,7 +972,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 .social-img {
-  fill: #999;
+  fill: var(--grey);
   transition: fill 0.3s ease-in-out;
 }
 
