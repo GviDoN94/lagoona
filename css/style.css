@@ -382,9 +382,9 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   outline: 1px solid var(--yellow);
   outline-offset:  8px;
   opacity: 0;
@@ -500,9 +500,9 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   outline: 1px solid var(--yellow);
   outline-offset:  8px;
   opacity: 0;
@@ -726,9 +726,9 @@ background-image: url('../img/swimming-pool.svg');
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .all-hotel-link-more {
