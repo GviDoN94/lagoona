@@ -67,7 +67,7 @@ img {
   display: flex;
 }
 
-.vissually-hidden {
+.visually-hidden {
   position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -206,21 +206,21 @@ img {
   color: var(--dark-yellow);
 }
 
-.autorization-arrow{
+.authorization-arrow{
   margin-right: 7px;
   fill: var(--yellow);
   transition: fill 0.2s ease-out;
 }
 
-.autorization:hover:not(:focus-visible) .autorization-arrow{
+.authorization:hover:not(:focus-visible) .autorization-arrow{
   fill: var(--light-yellow);
 }
 
-.autorization:active:not(:focus-visible) .autorization-arrow{
+.authorization:active:not(:focus-visible) .autorization-arrow{
   fill: var(--yellow);
 }
 
-.autorization-text {
+.authorization-text {
   line-height: 0;
 }
 
@@ -316,7 +316,7 @@ img {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer-left-2.jpg');
 }
 
-.offer-rigrt {
+.offer-right {
   justify-content: flex-end;
   background-image: url('../img/offer-right.jpg');
 }
@@ -605,7 +605,7 @@ background-image: url('../img/swimming-pool.svg');
 }
 
 /* accomodations */
-.accommofations-title {
+.accommodations-title {
   margin-bottom: 30px;
 }
 
@@ -769,7 +769,7 @@ background-image: url('../img/swimming-pool.svg');
   border-right: 1px solid #E1E1E1;;
 }
 
-.form-lable {
+.form-label {
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 12px;
